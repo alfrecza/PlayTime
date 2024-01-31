@@ -8,7 +8,7 @@ import ConfirmarCuenta from './pages/ConfirmarCuenta'
 
 function App() {
   return (
-    <div class="absolute top-0 z-[-2] min-h-full w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(74,222,128,0.2),rgba(255,255,255,0))]">
+    <div className="absolute top-0 z-[-2] min-h-full w-screen max-w-full bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(74,222,128,0.2),rgba(255,255,255,0))]">
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<AuthLayout/>}>
@@ -16,7 +16,7 @@ function App() {
               <Route path='registrar' element={<Registrar/>}/>
               <Route path='olvide-password' element={<OlvidePassword/>}/>
               <Route path='olvide-password/:token' element={<NuevoPassword/>}/>
-              <Route path='/confirmar/:id' element={<ConfirmarCuenta/>}/>
+              <Route path='confirmar/:id' element={<ConfirmarCuenta/>}/>
           </Route>
         </Routes>
       </BrowserRouter>
